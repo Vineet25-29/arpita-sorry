@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#160b22">
+<title>For Arpi — ek sorry dil se 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@500;600;700&display=swap');
+:root{--ink:#32152f;--muted:#76576f;--pink:#ff6f9f;--rose:#ed4f82;--violet:#9c68ef;--lav:#f1e5ff;--cream:#fffafd;--gold:#ffd66e}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#120817;color:var(--ink);font-family:'DM Sans',system-ui,sans-serif}body{min-height:100dvh;display:grid;place-items:center;padding:14px;overflow:hidden}
+body:before{content:"";position:fixed;inset:-20%;background:radial-gradient(circle at 18% 18%,#a858d04a,transparent 28%),radial-gradient(circle at 84% 78%,#ff548b38,transparent 30%),radial-gradient(circle at 55% 45%,#fff7ff0b,transparent 42%);animation:ambient 14s ease-in-out infinite alternate;pointer-events:none}@keyframes ambient{to{transform:scale(1.08) rotate(2deg)}}
+.shell{width:min(100%,480px);height:min(95dvh,900px);min-height:650px;padding:8px;border-radius:44px;background:linear-gradient(145deg,#ffffff38,#ffffff09);border:1px solid #ffffff25;box-shadow:0 40px 120px #0009;position:relative}.phone{height:100%;border-radius:36px;overflow:hidden;position:relative;isolation:isolate;background:linear-gradient(150deg,#fff9ff 0%,#f2e8ff 45%,#ffe9f2 100%);box-shadow:inset 0 0 0 1px #ffffff88}
+.glow{position:absolute;border-radius:50%;filter:blur(45px);pointer-events:none;z-index:-1}.g1{width:230px;height:230px;background:#d48aff55;left:-90px;top:-70px;animation:float 11s infinite}.g2{width:260px;height:260px;background:#ff8db055;right:-120px;bottom:-90px;animation:float 14s infinite reverse}.g3{width:160px;height:160px;background:#7f8bff24;left:42%;top:34%;animation:float 17s infinite}@keyframes float{50%{transform:translate(25px,-20px) scale(1.12)}}
+.noise{position:absolute;inset:0;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none;z-index:80}
+.top{position:absolute;z-index:90;top:15px;left:18px;right:18px;display:flex;justify-content:space-between;align-items:center}.brand{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:#87527d;display:flex;align-items:center;gap:8px}.brand i{width:7px;height:7px;background:var(--pink);border-radius:50%;box-shadow:0 0 0 5px #ff6fae22}.sound{width:35px;height:35px;border:1px solid #74496d1e;border-radius:50%;background:#fff9;color:#5e3a58;box-shadow:0 8px 25px #6c477414;cursor:pointer}.progress{position:absolute;z-index:90;top:61px;left:20px;right:20px;display:flex;gap:5px}.progress span{height:3px;flex:1;border-radius:10px;background:#6d476c18;overflow:hidden}.progress span:after{content:"";display:block;height:100%;width:0;background:linear-gradient(90deg,#9a5ce9,#ff5d99);transition:.55s}.progress span.on:after{width:100%}
+.scene{position:absolute;inset:0;padding:95px 25px 34px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;opacity:0;transform:translateY(25px) scale(.98);pointer-events:none;transition:.7s cubic-bezier(.22,.8,.2,1)}.scene.active{opacity:1;transform:none;pointer-events:auto}.scene.exit{opacity:0;transform:translateY(-24px) scale(.98)}
+.eyebrow{font-size:9px;text-transform:uppercase;letter-spacing:.25em;font-weight:900;color:#a05292;margin-bottom:13px}.title{font:700 clamp(39px,10vw,57px)/.98 'Playfair Display',serif;letter-spacing:-.045em;color:#3d1939}.title em{color:#c64c82}.h2{font:700 29px/1.08 'Playfair Display',serif;letter-spacing:-.03em;color:#401d3c}.sub{max-width:365px;margin:15px auto 0;font-size:13.5px;line-height:1.8;color:var(--muted)}.sub strong{color:#4d2649}.micro{font-size:10px;color:#a1869e;margin-top:12px}.cta{border:0;cursor:pointer;margin-top:22px;padding:14px 21px;border-radius:999px;color:white;font-size:12.5px;font-weight:800;letter-spacing:.01em;background:linear-gradient(110deg,#7735a5,#ae4fca 48%,#ff5d96);box-shadow:0 16px 34px #974fae45,inset 0 1px #ffffff66;transition:.18s}.cta:hover{transform:translateY(-2px);box-shadow:0 20px 40px #974fae55}.cta:active{transform:scale(.96)}.ghost{color:#6f4269;background:#fff9;border:1px solid #70446f20;box-shadow:0 10px 25px #70476e13}.row{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
+/* CSS cute bear + bunny */
+.duo{width:255px;height:190px;position:relative;margin:-3px 0 8px;filter:drop-shadow(0 20px 22px #75416b1c)}.char{position:absolute;bottom:16px;width:103px;height:108px;border:3px solid #4b3437;border-radius:48% 48% 42% 42%;animation:bob 3s ease-in-out infinite}.char:before,.char:after{content:"";position:absolute;top:-20px;width:32px;height:34px;border:3px solid #4b3437;background:inherit;z-index:-1}.bear{left:25px;background:#c88960}.bunny{right:25px;background:#fffafa}.bear:before,.bear:after{border-radius:50%}.bear:before{left:6px}.bear:after{right:6px}.bunny:before,.bunny:after{height:49px;border-radius:50%;}.bunny:before{left:7px;transform:rotate(-9deg)}.bunny:after{right:7px;transform:rotate(9deg)}.eye{position:absolute;top:37px;width:7px;height:9px;border-radius:50%;background:#3e2c33}.eye.l{left:27px}.eye.r{right:27px}.blush{position:absolute;top:54px;width:17px;height:7px;border-radius:50%;background:#f38fa0aa}.blush.l{left:9px}.blush.r{right:9px}.mouth{position:absolute;top:53px;left:50%;width:17px;height:10px;border-bottom:3px solid #4b3437;border-radius:0 0 50% 50%;transform:translateX(-50%)}.hug{position:absolute;left:78px;bottom:29px;width:93px;height:28px;border-bottom:5px solid #4b3437;border-radius:50%;transform:rotate(-3deg)}.duo .heart{position:absolute;left:111px;top:3px;font-size:30px;animation:heart 1.7s infinite}.spark{position:absolute;font-size:13px;animation:twinkle 1.7s infinite}.sp1{left:22px;top:36px}.sp2{right:21px;top:60px;animation-delay:.6s}.sp3{right:62px;top:3px;animation-delay:1s}@keyframes bob{50%{transform:translateY(-7px) rotate(1deg)}}@keyframes heart{50%{transform:translateY(-9px) scale(1.12)}}@keyframes twinkle{50%{transform:scale(1.5);opacity:.35}}
+/* glass cards */
+.card{width:100%;max-width:370px;padding:24px 21px;border-radius:28px;background:#ffffffa8;border:1px solid #ffffffc7;box-shadow:0 20px 55px #70496f1a;backdrop-filter:blur(16px);position:relative;overflow:hidden;text-align:left}.card:before{content:"";position:absolute;width:130px;height:130px;right:-55px;top:-65px;border-radius:50%;background:#ff91b42c}.card p{font-size:13.6px;line-height:1.85;color:#634a5f;margin:0}.card p+p{margin-top:13px}.card strong{color:#48203f}.highlight{margin-top:16px;padding:14px 15px;border-radius:17px;background:linear-gradient(135deg,#fff2f8aa,#f4eaffaa);border:1px solid #fff;line-height:1.65;font:600 13px/1.6 'Playfair Display',serif;color:#633653}.quote{margin-top:17px;padding:13px 14px;border-left:3px solid #d6578f;background:#ffedf640;border-radius:0 15px 15px 0;font:600 13px/1.55 'Playfair Display',serif;color:#633653}
+/* envelope */
+.envelope{width:255px;height:170px;position:relative;margin:22px 0 25px;cursor:pointer;filter:drop-shadow(0 22px 20px #79506a2b)}.envbody{position:absolute;inset:0;border-radius:16px;background:linear-gradient(145deg,#ffd96a,#ffb846);overflow:hidden}.envbody:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 49%,#e8aa34 50%,transparent 51%),linear-gradient(225deg,transparent 49%,#e8aa34 50%,transparent 51%);opacity:.55}.paper{position:absolute;z-index:3;left:19px;right:19px;top:20px;height:130px;background:#fffdf8;border-radius:11px;padding:18px 15px;color:#70415e;font:600 13px/1.45 'Playfair Display',serif;box-shadow:0 12px 25px #75405b19;transition:.75s cubic-bezier(.2,.8,.2,1)}.flap{position:absolute;z-index:5;left:0;top:0;width:100%;height:94px;background:#ffd05b;clip-path:polygon(0 0,50% 100%,100% 0);transform-origin:top;transition:.75s cubic-bezier(.2,.8,.2,1)}.seal{position:absolute;z-index:7;left:50%;top:67px;transform:translateX(-50%);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#e9558a;color:white;box-shadow:0 7px 17px #8a3d5c55;transition:.4s}.envelope.open .flap{transform:rotateX(180deg)}.envelope.open .paper{transform:translateY(-73px)}.envelope.open .seal{opacity:0;transform:translateX(-50%) scale(.5)}
+
+/* premium interactive love letter */
+.letter-stage{width:100%;max-width:390px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.letter-hint{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#a06a8f;font-weight:800;animation:hintPulse 2s ease-in-out infinite}
+@keyframes hintPulse{50%{opacity:.5;transform:translateY(2px)}}
+.letter-envelope{width:270px;height:184px;position:relative;cursor:pointer;filter:drop-shadow(0 24px 28px #7043612d);transition:transform .35s ease}
+.letter-envelope:hover{transform:translateY(-7px) rotate(-1deg)}
+.le-body{position:absolute;inset:0;border-radius:18px;background:linear-gradient(145deg,#fff0c8,#ffd36e 65%,#f5b84e);border:1px solid #fff9;overflow:hidden}
+.le-body:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 48.5%,#d89a392e 49%,transparent 50.5%),linear-gradient(215deg,transparent 48.5%,#d89a392e 49%,transparent 50.5%)}
+.le-flap{position:absolute;z-index:4;left:0;top:0;width:100%;height:105px;background:linear-gradient(145deg,#ffe28d,#ffc85b);clip-path:polygon(0 0,50% 100%,100% 0);transform-origin:50% 0;transition:transform .8s cubic-bezier(.2,.9,.2,1);filter:drop-shadow(0 3px 2px #a86a3022)}
+.le-seal{position:absolute;z-index:8;left:50%;top:73px;transform:translateX(-50%);width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#ff8eb2,#d93e78);border:3px solid #fff7;box-shadow:0 9px 20px #9e3d5b55;color:white;font-size:21px;transition:opacity .35s,transform .5s}
+.le-ribbon{position:absolute;z-index:2;left:50%;top:0;bottom:0;width:18px;transform:translateX(-50%);background:#f0a84833}
+.letter-envelope.open{transform:translateY(4px)}
+.letter-envelope.open .le-flap{transform:rotateX(180deg)}
+.letter-envelope.open .le-seal{opacity:0;transform:translateX(-50%) scale(.35)}
+.letter-card-wrap{position:absolute;z-index:20;inset:0;display:grid;place-items:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .45s ease}
+.letter-card-wrap.show{opacity:1;pointer-events:auto}
+.letter-card{width:min(100%,365px);max-height:78%;overflow:auto;position:relative;padding:30px 25px 28px;border-radius:18px;background:#fffdf5;border:1px solid #f0e1bd;box-shadow:0 35px 90px #4020333b,0 4px 0 #fff;transform:translateY(35px) scale(.92) rotate(1.5deg);transition:transform .7s cubic-bezier(.2,.9,.2,1);text-align:left;background-image:linear-gradient(#d8cbb045 1px,transparent 1px);background-size:100% 29px}
+.letter-card-wrap.show .letter-card{transform:none}
+.letter-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 12%,#ffd8e433,transparent 24%),radial-gradient(circle at 90% 90%,#d8c8ff38,transparent 28%);pointer-events:none}
+.letter-card .tape{position:absolute;top:-10px;left:50%;transform:translateX(-50%) rotate(-2deg);width:74px;height:24px;background:#f7dca1aa;box-shadow:0 2px 6px #8c693211}
+.letter-card .close-letter{position:absolute;right:12px;top:10px;width:30px;height:30px;border:0;border-radius:50%;background:#fff8;color:#80516d;cursor:pointer;font-size:18px;z-index:3}
+.letter-date{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#a57a91;font-weight:800;margin-bottom:12px}
+.letter-title{font:700 31px/1 'Playfair Display',serif;color:#4a203f;margin-bottom:17px}
+.letter-title span{color:#d84d84}
+.letter-body{font:500 13.3px/2 'DM Sans',sans-serif;color:#684f61;position:relative}
+.letter-body p{margin:0 0 12px}.letter-body strong{color:#4a233f}.letter-body em{font-family:'Playfair Display',serif;font-size:15px;color:#6c3858}
+.letter-divider{height:1px;background:linear-gradient(90deg,transparent,#e5b9c9,transparent);margin:17px 0}
+.letter-sign{font:italic 700 22px 'Playfair Display',serif;color:#a44d82;text-align:right;margin-top:12px}.letter-heartline{text-align:center;font-size:16px;letter-spacing:5px;margin:5px 0 12px}
+.letter-decor{position:absolute;pointer-events:none;font-size:25px;opacity:.7}.ld1{top:48px;right:17px;transform:rotate(12deg)}.ld2{bottom:18px;left:14px;transform:rotate(-18deg)}.ld3{bottom:35px;right:15px;font-size:19px}
+.letter-note{font-size:10px;color:#a27e91;margin-top:5px}
+
+/* promise cards */
+.promise-grid{width:100%;max-width:370px;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.promise{padding:16px 13px;border-radius:21px;background:#ffffff91;border:1px solid #fff;box-shadow:0 10px 27px #70486f0e;text-align:left}.promise .icon{font-size:21px}.promise b{display:block;font-size:11px;margin:7px 0 4px;color:#4b2546}.promise span{font-size:10.5px;line-height:1.5;color:#735a70}
+/* love seal */
+.sealbox{width:126px;height:126px;border-radius:40px;display:grid;place-items:center;background:linear-gradient(145deg,#ff7eaa,#a45ce2);box-shadow:0 28px 55px #a74f9e42;animation:sealfloat 3s ease-in-out infinite}.sealbox span{font-size:62px;filter:drop-shadow(0 8px 5px #6c265533)}@keyframes sealfloat{50%{transform:rotate(3deg) translateY(-7px)}}
+
+/* action page: keep every element safely inside the phone */
+.actions-scene{padding:82px 22px 30px;justify-content:center;gap:0}
+.actions-scene .eyebrow{margin-bottom:7px}
+.actions-scene .sealbox{width:86px;height:86px;border-radius:27px;box-shadow:0 18px 38px #a74f9e35}
+.actions-scene .sealbox span{font-size:42px}
+.actions-scene .h2{font-size:24px;margin-top:11px !important}
+.actions-scene .sub{font-size:11.5px;line-height:1.5;margin-top:8px;max-width:350px}
+.actions-scene .promise-grid{gap:7px;margin-top:10px;max-width:360px}
+.actions-scene .promise{padding:10px 10px;border-radius:16px}
+.actions-scene .promise .icon{font-size:17px}
+.actions-scene .promise b{font-size:10px;margin:4px 0 2px}
+.actions-scene .promise span{font-size:8.7px;line-height:1.28}
+.actions-scene .cta{margin-top:12px;padding:11px 18px;font-size:11px}
+@media(max-height:720px){.actions-scene{padding-top:76px;padding-bottom:25px}.actions-scene .sealbox{width:70px;height:70px}.actions-scene .sealbox span{font-size:34px}.actions-scene .h2{font-size:21px}.actions-scene .sub{font-size:10.5px}.actions-scene .promise{padding:8px}.actions-scene .promise span{font-size:8px}.actions-scene .cta{margin-top:9px}}
+/* final */
+.final-heart{font-size:78px;filter:drop-shadow(0 16px 22px #b04c8428);animation:heart 1.5s infinite}.signature{font:italic 700 20px 'Playfair Display',serif;color:#9d4d8b;margin-top:17px}.bottom{position:absolute;z-index:91;left:0;right:0;bottom:11px;text-align:center;color:#a48b9e;font-size:8.5px;letter-spacing:.04em}
+
+/* premium corner music control */
+.music-dock{position:absolute;z-index:125;right:14px;top:14px;left:auto;bottom:auto;pointer-events:none}
+.music-card{pointer-events:auto;position:relative;width:48px;height:48px;padding:0;display:grid;place-items:center;border-radius:50%;background:linear-gradient(145deg,#ffffffef,#f8edffd9);border:1px solid #ffffffd9;backdrop-filter:blur(16px);box-shadow:0 10px 28px #5c2b5a26,0 0 0 1px #ffffff55;animation:musicFloat 3.5s ease-in-out infinite;transition:.22s}
+.music-card:hover{transform:translateY(-2px) scale(1.04);box-shadow:0 14px 34px #5c2b5a32,0 0 0 5px #ffffff24}
+.music-btn{width:39px;height:39px;padding:0;border:0;cursor:pointer;border-radius:50%;font-size:15px;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,#8d43bb,#e95899);box-shadow:0 7px 16px #a14f9d42,inset 0 1px #ffffff66;transition:.18s}
+.music-btn:hover{transform:scale(1.06)}
+.music-btn:active{transform:scale(.92)}
+.music-btn.playing{background:linear-gradient(145deg,#4c9a82,#69b89c)}
+.music-copy,.music-waves,.music-small,.music-file{display:none}
+.music-card:after{content:'please janu 🥺';position:absolute;right:0;top:56px;white-space:nowrap;padding:7px 10px;border-radius:13px;background:#fffafdf5;color:#754568;font-size:8px;font-weight:800;letter-spacing:.02em;box-shadow:0 8px 20px #5c2b5a20;opacity:0;transform:translateY(-4px);pointer-events:none;transition:.22s}
+.music-card:hover:after{opacity:1;transform:none}
+.music-card.playing:before{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid #d85c9a55;animation:musicRing 1.5s ease-out infinite}
+@keyframes musicFloat{50%{transform:translateY(-3px)}}
+@keyframes musicRing{0%{transform:scale(.92);opacity:.75}100%{transform:scale(1.3);opacity:0}}
+@media(max-width:650px){.music-dock{right:11px;top:11px}.music-card{width:44px;height:44px}.music-btn{width:36px;height:36px;font-size:13px}}
+</style>
+</head>
+<body>
+<div class="shell"><main class="phone" id="phone">
+<div class="noise"></div><div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
+<div class="top"><div class="brand"><i></i> just for my Arpi</div><button class="sound" id="sound" aria-label="sound">🔈</button></div>
+<div class="progress" id="progress"></div>
+<div class="particles"><span class="p">💗</span><span class="p">✦</span><span class="p">🌸</span><span class="p">💜</span><span class="p">✨</span></div>
+
+<section class="scene active">
+  <div class="eyebrow">a little corner of my heart</div>
+  <div class="duo"><span class="spark sp1">✦</span><span class="spark sp2">✦</span><span class="spark sp3">♡</span><span class="heart">💗</span><div class="char bear"><i class="eye l"></i><i class="eye r"></i><i class="blush l"></i><i class="blush r"></i><i class="mouth"></i></div><div class="char bunny"><i class="eye l"></i><i class="eye r"></i><i class="blush l"></i><i class="blush r"></i><i class="mouth"></i></div><div class="hug"></div></div>
+  <div class="title">Arpi…<em>🥺❤️</em></div>
+  <p class="sub">Ek chhoti si baat hai…<br><strong>please isse thoda sa dil se padhna, meri jaan.</strong></p>
+  <button class="cta next">Open my heart 💌</button><div class="micro">slowly… there’s no rush 🤍</div>
+</section>
+
+<section class="scene">
+  <div class="eyebrow">a little letter, just for you</div>
+  <div class="letter-stage">
+    <div class="letter-envelope" id="letterEnv" aria-label="Open the love letter">
+      <div class="le-body"></div><div class="le-ribbon"></div><div class="le-flap"></div><div class="le-seal">♥</div>
+    </div>
+    <div class="letter-hint">tap the seal to open 💌</div>
+  </div>
+  <div class="h2" style="margin-top:4px">Arpi ke naam…</div>
+  <p class="sub">Ek chhota sa letter hai, <strong>jo main shayad saamne itna beautifully nahi bol paata.</strong> 🥺</p>
+  <button class="cta next" id="letterNext" style="display:none">Ab dil ki baaki baat… 🥺❤️</button>
+
+  <div class="letter-card-wrap" id="letterWrap">
+    <article class="letter-card">
+      <div class="tape"></div><button class="close-letter" id="closeLetter" aria-label="close">×</button>
+      <div class="letter-decor ld1">🌸</div><div class="letter-decor ld2">♡</div><div class="letter-decor ld3">✨</div>
+      <div class="letter-date">a letter from your Vineet</div>
+      <div class="letter-title">For my <span>Arpi…</span> 🥺❤️</div>
+      <div class="letter-heartline">♡ ✦ ♡</div>
+      <div class="letter-body">
+        <p><strong>Arpi...🥺❤️ I’m really sorry meri jaan...</strong></p>
+        <p>Pata hai na, kabhi-kabhi main gusse mein aisi baatein bol deta hoon jo mujhe nahi bolni chahiye... aur sabse zyada bura mujhe tab lagta hai jab <strong>meri hi wajah se aap hurt hoti ho.</strong> 🥺💔</p>
+        <p>Main kabhi jaan-bujhkar aapko hurt nahi karna chahta. Bas kabhi-kabhi apni feelings aur gusse ko sahi tarah handle nahi kar pata... <strong>but that’s not an excuse.</strong></p>
+        <div class="letter-divider"></div>
+        <p><strong>Aap mere liye bohot zyada important ho...</strong> itna ki kabhi-kabhi aapko lose karne ka darr hi mujhe stupid reactions de deta hai. 🥺❤️</p>
+        <p>But jaan, main nahi chahta ki mera pyaar kabhi aapke liye hurt ka reason bane. <em>I want my love to feel safe, soft and real.</em></p>
+        <p>Main chahta hoon ki aapko meri mohabbat meri baaton se nahi, <strong>mere actions se feel ho.</strong> Aur main honestly try karunga ki same mistake baar-baar repeat na ho.</p>
+        <div class="letter-divider"></div>
+        <p><strong>Sorry meri jaan...</strong> mere iss imperfect version ko thoda sa sambhal lena. 🥺🫶🏻❤️ Main bhi poori honestly koshish karunga ki aapke dil ko dobara meri wajah se hurt na karun.</p>
+        <p>Abhi aap gussa ho, hurt ho, ya time chahiye... <strong>it’s okay.</strong> No pressure. Jab dil kare, tab mujhse baat kar lena. Main sununga... properly. 🤍</p>
+      </div>
+      <div class="letter-sign">— tumhara Vineet ❤️</div>
+    </article>
+  </div>
+</section>
+
+<section class="scene">
+  <div class="eyebrow">from me, honestly</div>
+  <div class="card">
+    <p><strong>Arpi...🥺❤️ I’m really sorry meri jaan...</strong> pata hai na, kabhi-kabhi main gusse mein aisi baatein bol deta hoon jo mujhe nahi bolni chahiye... aur sabse zyada bura mujhe tab lagta hai jab <strong>meri hi wajah se aap hurt hoti ho.</strong> 🥺💔</p>
+    <p>Main kabhi jaan-bujhkar aapko hurt nahi karna chahta. Bas kabhi-kabhi apni feelings aur gusse ko sahi tarah handle nahi kar pata… <strong>but that’s not an excuse.</strong></p>
+    <div class="highlight">Aapka hurt hona real hai. Aur meri mistake ko “gussa tha” bolke chhota kar dena… woh bhi sahi nahi hai. 🥺</div>
+  </div>
+  <button class="cta next">Thoda aur dil ki baat… 🫶🏻</button>
+</section>
+
+<section class="scene">
+  <div class="eyebrow">the part i struggle to say</div>
+  <div class="duo" style="transform:scale(.78);margin:-6px 0 -13px"><span class="heart">🥺</span><div class="char bear"><i class="eye l"></i><i class="eye r"></i><i class="blush l"></i><i class="blush r"></i><i class="mouth"></i></div><div class="char bunny"><i class="eye l"></i><i class="eye r"></i><i class="blush l"></i><i class="blush r"></i><i class="mouth"></i></div><div class="hug"></div></div>
+  <div class="card">
+    <p><strong>Aap mere liye bohot zyada important ho…</strong> itna ki kabhi-kabhi aapko lose karne ka darr hi mujhe stupid reactions de deta hai. 🥺❤️</p>
+    <p>But jaan… <strong>fear is not an excuse to hurt the person I love.</strong> Mujhe ye samajhna hai, aur sirf samajhna nahi… apne actions mein dikhana hai.</p>
+    <div class="quote">“I don’t want my love to be something you only hear. I want you to feel it in the way I treat you.” ❤️</div>
+  </div>
+  <button class="cta next">Aur ek promise hai… 🌷</button>
+</section>
+
+<section class="scene actions-scene">
+  <div class="eyebrow">not just pretty words</div>
+  <div class="sealbox"><span>🫶🏻</span></div>
+  <div class="h2" style="margin-top:18px">I want my actions to speak.</div>
+  <p class="sub">Main chahta hoon ki aapko meri mohabbat meri baaton se nahi, <strong>mere actions se feel ho.</strong> Aur agar main kabhi phir galat ho jaun, toh “main aisa hi hoon” bolke escape nahi karunga.</p>
+  <div class="promise-grid">
+    <div class="promise"><div class="icon">👂🏻</div><b>pehle sununga</b><span>Aapki baat samajhne ki koshish karunga, defend karne ki nahi.</span></div>
+    <div class="promise"><div class="icon">🤍</div><b>space respect karunga</b><span>Aapko time chahiye toh bina pressure ke dunga.</span></div>
+    <div class="promise"><div class="icon">🗣️</div><b>words ka dhyaan</b><span>Gussa aaye tab bhi aise words nahi bolunga jo baad mein regret hon.</span></div>
+    <div class="promise"><div class="icon">🌱</div><b>mistake repeat nahi</b><span>Sorry ke saath actual change bhi laane ki honestly try karunga.</span></div>
+  </div>
+  <button class="cta next">Bas ek last confession… 🥺</button>
+</section>
+
+<section class="scene">
+  <div class="eyebrow">the softest truth</div>
+  <div class="title typing" data-text="I love you genuinely. ❤️"></div>
+  <p class="sub">Bohot bohot zyada. Aur nahi, main ye line tumhe manaane ke liye nahi bol raha… <strong>main bas sach bol raha hoon.</strong></p>
+  <div class="card" style="margin-top:18px">
+    <p>Sorry meri jaan… please mere iss <strong>imperfect version ko thoda sa sambhal lena.</strong> 🥺🫶🏻❤️</p>
+    <p>Main bhi poori honestly koshish karunga ki aapke dil ko dobara meri wajah se hurt na karun.</p>
+    <div class="highlight">“I may not always get everything right… but I never want to stop becoming better for the person I love.”</div>
+  </div>
+  <button class="cta next">Ab aapki marzi… 🤍</button>
+</section>
+
+<section class="scene">
+  <div class="eyebrow">no pressure, meri jaan</div>
+  <div class="duo"><span class="heart">💞</span><div class="char bear"><i class="eye l"></i><i class="eye r"></i><i class="blush l"></i><i class="blush r"></i><i class="mouth"></i></div><div class="char bunny"><i class="eye l"></i><i class="eye r"></i><i class="blush l"></i><i class="blush r"></i><i class="mouth"></i></div><div class="hug"></div></div>
+  <div class="h2">Mujhe instant forgiveness nahi chahiye.</div>
+  <p class="sub">Aap abhi gussa ho, hurt ho, ya thoda time chahti ho… <strong>it’s okay.</strong> Main aapko force nahi karunga ki aap turant “theek hai” bolo.</p>
+  <p class="sub" style="margin-top:9px">Bas jab dil halka ho, jab aap ready ho… <strong>mujhse baat kar lena.</strong> I’ll listen. Properly. 🥺🤍</p>
+  <div class="row"><button class="cta" id="talk">I’m ready to talk 💗</button><button class="cta ghost" id="space">I need some time 🤍</button></div>
+</section>
+
+<section class="scene" id="end">
+  <div class="eyebrow">from your stupidly-in-love boy</div>
+  <div class="final-heart">💌</div>
+  <div class="h2" id="endTitle">Sorry, meri jaan. 🥺❤️</div>
+  <p class="sub" id="endText">Main perfect nahi hoon… but aapko hurt karke khush bhi nahi reh sakta. I love you, I’m sorry, and I genuinely want to do better. 🫶🏻</p>
+  <div class="signature">— tumhara Vineet ❤️</div>
+  <button class="cta ghost" id="replay">Read it again ↻</button>
+  <div class="micro">no pressure • no expectations • just a sorry from my heart ✨</div>
+</section>
+
+
+<div class="music-dock" aria-label="background music">
+  <div class="music-card" id="musicCard">
+    <button class="music-btn" id="musicBtn" aria-label="Play our song" title="Please janu… yaha click kro na 🥺🎶">♫</button><input id="songPicker" type="file" accept="audio/*" style="display:none">
+  </div>
+</div>
+<audio id="bgMusic" loop preload="auto">
+  <source src="arpita-song.mp3" type="audio/mpeg">
+  <source src="arpita-song.m4a" type="audio/mp4">
+  <source src="arpita-song.wav" type="audio/wav">
+  <source src="arpita-song.ogg" type="audio/ogg">
+</audio><div class="bottom">made with love, regret & a very soft heart • for Arpita ♡</div>
+</main></div>
+<script>
+(()=>{
+const scenes=[...document.querySelectorAll('.scene')],progress=document.getElementById('progress'),bars=[];let idx=0,muted=false;
+scenes.forEach((_,i)=>{const b=document.createElement('span');progress.appendChild(b);bars.push(b)});bars[0].classList.add('on');
+function tone(freq=520,d=.07){if(muted)return;try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return;const c=new C(),o=c.createOscillator(),g=c.createGain();o.type='sine';o.frequency.value=freq;g.gain.setValueAtTime(.025,c.currentTime);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+d);o.connect(g);g.connect(c.destination);o.start();o.stop(c.currentTime+d)}catch(e){}}
+function go(n){if(n<0||n>=scenes.length)return;const old=idx;scenes[old].classList.remove('active');scenes[old].classList.add('exit');setTimeout(()=>scenes[old].classList.remove('exit'),700);idx=n;scenes[idx].classList.add('active');bars.forEach((b,i)=>b.classList.toggle('on',i<=idx));tone(500+idx*38,.065);const t=scenes[idx].querySelector('.typing');if(t&&!t.dataset.typed)type(t);}
+function type(el){const text=el.dataset.text||'';el.dataset.typed='1';el.classList.add('caret');let i=0;const timer=setInterval(()=>{el.textContent=text.slice(0,++i);if(i>=text.length){clearInterval(timer);el.classList.remove('caret')}},50)}
+document.querySelectorAll('.next').forEach(b=>b.addEventListener('click',()=>go(idx+1)));
+const letterEnv=document.getElementById('letterEnv'),letterWrap=document.getElementById('letterWrap'),letterNext=document.getElementById('letterNext'),closeLetter=document.getElementById('closeLetter');
+letterEnv.addEventListener('click',()=>{letterEnv.classList.add('open');setTimeout(()=>{letterWrap.classList.add('show');letterNext.style.display='inline-block'},420);tone(720,.12);burst(innerWidth/2,innerHeight*.46)});
+closeLetter.addEventListener('click',e=>{e.stopPropagation();letterWrap.classList.remove('show');setTimeout(()=>letterEnv.classList.remove('open'),320);tone(430,.08)});
+letterNext.addEventListener('click',()=>go(idx+1));
+function burst(x,y){['💗','✨','🌸','💜','💖','♡','🫶🏻'].forEach((v,i)=>setTimeout(()=>{const e=document.createElement('span');e.className='burst';e.textContent=v;e.style.left=x+'px';e.style.top=y+'px';e.style.setProperty('--x',(Math.random()-.5)*210+'px');e.style.setProperty('--y',(Math.random()-.5)*170-50+'px');document.body.appendChild(e);setTimeout(()=>e.remove(),1000)},i*45))}
+document.addEventListener('pointerdown',e=>{if(e.target.closest('button,.envelope'))return;if(Math.random()>.55)burst(e.clientX,e.clientY)});
+document.getElementById('talk').onclick=()=>{document.getElementById('endTitle').textContent='Thank you, meri jaan. 🥺❤️';document.getElementById('endText').textContent='Ab jab bhi baat hogi, main pehle aapko sununga. No ego, no unnecessary arguments… bas calmly baat karenge. I really want to make things better. 🫶🏻';burst(innerWidth/2,innerHeight/2);go(7)};
+document.getElementById('space').onclick=()=>{document.getElementById('endTitle').textContent='Take your time, cutu. 🤍';document.getElementById('endText').textContent='Aapko abhi reply nahi karna hai toh mat karo. I’ll respect your space. Bas apna khayal rakhna… and whenever you feel ready, I’ll be here to listen. 🥺';go(7)};
+document.getElementById('replay').onclick=()=>{scenes.forEach(s=>s.classList.remove('active','exit'));idx=0;scenes[0].classList.add('active');bars.forEach((b,i)=>b.classList.toggle('on',i===0));letterWrap.classList.remove('show');letterEnv.classList.remove('open');letterNext.style.display='none';document.querySelectorAll('.typing').forEach(t=>{t.textContent='';delete t.dataset.typed});window.scrollTo(0,0)};
+document.getElementById('sound').onclick=e=>{muted=!muted;e.currentTarget.textContent=muted?'🔇':'🔈';if(!muted)tone(680,.08)};
+
+// Background song: put ONE of these beside this HTML: arpita-song.mp3 / .m4a / .wav / .ogg
+const musicBtn=document.getElementById('musicBtn'),musicCard=document.getElementById('musicCard'),bgMusic=document.getElementById('bgMusic'),songPicker=document.getElementById('songPicker');
+let musicPlaying=false;
+function musicUI(on){musicPlaying=on;musicBtn.textContent=on?'Ⅱ':'♫';musicBtn.classList.toggle('playing',on);musicCard.classList.toggle('playing',on);}
+function musicError(){
+  musicUI(false);
+  musicBtn.title='Song select karo ❤️  apna audio choose karo';
+  musicBtn.setAttribute('aria-label','Choose your song');
+  burst(innerWidth-38,38);
+}
+async function toggleMusic(){
+  if(musicPlaying){bgMusic.pause();musicUI(false);return}
+  try{
+    bgMusic.volume=.42;
+    await bgMusic.play();
+    musicUI(true);
+    musicBtn.title='Pause our song ❤️';
+  }catch(e){
+    // If the named file is missing or the browser cannot load it, let the user pick the song.
+    songPicker.click();
+  }
+}
+songPicker.addEventListener('change',()=>{
+  const file=songPicker.files && songPicker.files[0];
+  if(!file)return;
+  const url=URL.createObjectURL(file);
+  bgMusic.pause();
+  bgMusic.src=url;
+  bgMusic.volume=.42;
+  bgMusic.load();
+  bgMusic.play().then(()=>{
+    musicUI(true);
+    musicBtn.title='Pause our song ❤️';
+  }).catch(()=>musicError());
+});
+bgMusic.addEventListener('error',musicError);
+bgMusic.addEventListener('canplay',()=>{musicBtn.title='Please janu… yaha click kro na 🥺🎶'});
+musicBtn.addEventListener('click',toggleMusic);
+bgMusic.addEventListener('ended',()=>musicUI(false));
+
+window.addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(idx+1);if(e.key==='ArrowLeft')go(idx-1)});
+const phone=document.getElementById('phone');phone.addEventListener('pointermove',e=>{const r=phone.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;phone.style.transform=`perspective(900px) rotateX(${y*-1.3}deg) rotateY(${x*1.3}deg)`});phone.addEventListener('pointerleave',()=>phone.style.transform='');
+})();
+</script>
+</body></html>
